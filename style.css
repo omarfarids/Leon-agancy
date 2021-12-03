@@ -399,7 +399,7 @@ footer p {
   }
   .contact,
   footer {
-    min-width: 420px;
+    min-width: 280px;
   }
   .about > div {
     max-width: 550px;
@@ -424,13 +424,30 @@ footer p {
   ========== mobiles ============
   ================================ */
 @media (max-width: 375px) {
+  :root {
+    font-size: 0.8em;
+    width: 375px;
+    overflow-x: hidden;
+  }
+
+  .contact > p::before,
+  .about > p::before,
+  .portfolio > p::before,
+  .services > p::before {
+    font-size: 70px;
+    left: -20px;
+  }
+  .portfolio > p::before {
+    left: 0px;
+  }
   .nav {
     padding: 0px 50px;
   }
   header,
   .nav,
   header > div:nth-of-type(2),
-  header > div:nth-of-type(2) div {
+  header > div:nth-of-type(2) div,
+  footer {
     min-width: 280px;
   }
 
