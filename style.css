@@ -1,3 +1,6 @@
+/*=========================
+  ==== general styling ====
+  =========================*/
 :root {
   width: 950px;
   font-family: karla, sans-serif, arial;
@@ -8,10 +11,14 @@
 main {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: initial;
 }
+/*=========================
+  ========= header ========
+  =========================*/
 header {
   position: relative;
   width: 97vw;
@@ -103,7 +110,7 @@ ul::before {
 }
 
 header > div:nth-of-type(2) {
-  background: url("images/landing.jpg") no-repeat center;
+  background: url("Images/landing.jpg") no-repeat center;
   background-size: cover;
   width: 97vw;
   height: 80vh;
